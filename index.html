@@ -14,59 +14,68 @@
     <main>
         <section>
             <h1>3 способи використання CSS стилів</h1>
-            <div>
+            <div class="ways">
                 <ol>
-                    <li>
-                        <h3>Стилі в HTML-тегах</h3>
+                    <li class="selector-ways">
+                        <h3>Лінійний CSS</h3>
                         <p>
                             Приклад:
                             p class="color: red"
                         </p>
                     </li>
-                    <li>
-                        <h3>Стилі в head файлу HTML</h3>
+                    <li class="selector-ways">
+                        <h3>Внутрішній CSS</h3>
                         <p>
                             Приклад:
                             styles
-                            p {
-                            color: green;
-                            },
+                            p {color: green;}
                             /styles
                         </p>
                     </li>
-                    <li>
-                        <h3>Стилі в окремому файлі CSS</h3>
+                    <li class="selector-ways">
+                        <h3>Зовнішній CSS</h3>
                         <p>
                             Приклад: link rel="stylesheet" href="./styles/style.css"
+                            Вказується в head
                         </p>
-                        <p>Вказується в head</p>
                     </li>
                 </ol>
             </div>
         </section>
         <section>
-            <h1>Селектори CSS стилів</h1>
+            <h1>Типи селекторів</h1>
             <div>
                 <ol>
-                    <li>
+                    <li class="selector-define">
+                        <h3>Використання назви елементу</h3>
+                        <p class="text">
+                            Приклад: p{} - описує всі теги p
+                        </p>
+                    </li>
+                    <li class="selector-define">
                         <h3>Використання class</h3>
                         <p class="text">
-                            Приклад: p class="text"{}
+                            Приклад: .class{}
                         </p>
                     </li>
-                    <li>
+                    <li class="selector-define">
                         <h3>Використання id</h3>
                         <p id="text">
-                            Приклад: p id="text"{}
+                            Приклад: #text{}
                         </p>
                     </li>
-                    <li>
+                    <li class="selector-define">
                         <h3>Використання data target</h3>
                         <p data-target="id">
-                            Приклад: p data-target="id"{}
+                            Приклад: data-target="id"{}
                         </p>
                     </li>
-
+                    <li class="selector-define">
+                        <h3>Використання вкладеності</h3>
+                        <p data-target="id">
+                            Приклад: p[class="text"]{};
+                        </p>
+                    </li>
                 </ol>
             </div>
         </section>
@@ -74,34 +83,64 @@
             <h1>Використання комбінацій селекторів</h1>
             <div>
                 <ol>
-                    <li>
+                    <li class="selector-combination">
                         <h3>Комбінація tag.class#id</h3>
                         <p>
                             Приклад: p.class#id{} - описує тег p, якому присвоєно комбінацію певного class та id
                         </p>
                     </li>
-                    <li>
+                    <li class="selector-combination">
                         <h3>Комбінація tag[type]</h3>
                         <p>
                             Приклад: button[type="submit"]{} - описує зазначений тег, що містить в собі певний атрибут
                         </p>
                     </li>
-                    <li>
-                        <h3>Задання стилів одночасно для декількох селекторів</h3>
+                    <li class="selector-combination">
+                        <h3>Опис одночасно для декількох селекторів tag.class, tag#id </h3>
                         <p>
                             Приклад: p.text, p#text{} - одночасно описує теги p class="text" та p id="text"
                         </p>
                     </li>
-                    <li>
-                        <h3>Вкладені теги</h3>
+                    <li class="selector-combination">
+                        <h3>Селектор вкладених тегів tag tag</h3>
                         <p>
-                            Приклад: div span {} - описує span, який огорнутий в div
+                            Приклад: div span {} - описує всі span, які знаходяться в div
                         </p>
                     </li>
-                    <li>
-                        <h3>Вкладені теги 1 рівня</h3>
+                    <li class="selector-combination">
+                        <h3>Селектор вкладеного тегу 1 рівня tag tag </h3>
                         <p>
-                            Приклад: div > span {} - описує тег, що знаходиться на 1 рівні вкладеності
+                            Приклад: div (знак більше) span {} - описує тег span, що знаходиться на 1 рівні вкладеності
+                            відносно div
+                        </p>
+                    </li>
+                    <li class="selector-combination">
+                        <h3>Селектор тегу, що йде після певного елементу tag.class + tag#id </h3>
+                        <p>
+                            Приклад: p.text + p#text - описує тег p, що має id="text", та йде після тегу p, що має
+                            class="text"
+                        </p>
+                    </li>
+                    <li class="selector-combination">
+                        <h3>Селектор тегу, чий class починається з певного слова tag[class^="word"] </h3>
+                        <p>
+                            Приклад: p[class^="some"]{} - описує всі теги p, яким присвоєні class, що починаються зі
+                            слова "some"
+                        </p>
+                    </li>
+                    <li class="selector-combination">
+                        <h3>Селектор тегу, що містить певне слово в назві class tag[class*="word"]</h3>
+                        <p>
+                            Приклад: p[class*="some"]{} - описує всі теги p, яким присвоєні class, що починаються зі
+                            слова "some"
+                        </p>
+                    </li>
+
+                    <li class="selector-combination">
+                        <h3>Всеохоплюючий першопроходець або селектор "Зірик"</h3>
+                        <p>
+                            Приклад: *{} - тег, що описує стилі для всіх сторінок (саме з нього починають всі поважаючі
+                            себе розробники)
                         </p>
                     </li>
                 </ol>

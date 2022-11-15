@@ -4,48 +4,83 @@
   box-sizing: border-box;
   line-height: 1.5;
   font-size: 18px;
+  background-color: rgb(61, 61, 61);
+  color: rgb(204, 204, 204);
 }
 
 main {
-  margin: 40px 40px 40px 40px;
-  
+  margin: 40px 40px;
+}
+
+
+
+div ol {
+    max-width: 100%;
+    align-items: center;
+}
+
+ol > li {
+    align-items: center;
+    
+}
+
+p[class="text"] {
+    max-width: 200px;
+}
+
+.selector-ways {
+  display: inline-block;
+  margin-right: 30px;
+  min-width: fit-content;
+}
+.selector-define {
+  display: inline-block;
+  margin-right: 30px;
+  max-width: 30%;
+}
+
+.selector-combination {
+  max-width: 30%;
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+li > p {
+    
+}
+
+div {
+    margin-bottom: 30px;
 }
 
 h1 {
-    font-size: 32px;
-    margin-bottom: 40px;
-    text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-
-}
-
-li {
-    margin-bottom: 30px;
-
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
 p {
-    color: blue;
+  color: blue;
 }
 
 .text {
-    color:yellow;
-    width: 300px;
+  color: yellow;
 }
 
 #text {
-    color:green;
-    width: 500px;
+  color: green;
 }
 
-[data-target="id"] {
-    color: aqua;
+[data-target='id'] {
+  color: aqua;
 }
 
 p.text {
-    color: cyan;
+  color: cyan;
 }
