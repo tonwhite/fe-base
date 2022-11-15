@@ -5,12 +5,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 3</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>CSS селектори</title>
 </head>
 
 <body>
     <header></header>
-    <main></main>
+    <main>
+        <section>
+            <h1>3 способи використання CSS стилів</h1>
+            <div>
+                <ol>
+                    <li>
+                        <h3>Стилі в HTML-тегах</h3>
+                        <p>
+                            Приклад:
+                            p class="color: red"
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Стилі в head файлу HTML</h3>
+                        <p>
+                            Приклад:
+                            styles
+                            p {
+                            color: green;
+                            },
+                            /styles
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Стилі в окремому файлі CSS</h3>
+                        <p>
+                            Приклад: link rel="stylesheet" href="./styles/style.css"
+                        </p>
+                        <p>Вказується в head</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section>
+            <h1>Селектори CSS стилів</h1>
+            <div>
+                <ol>
+                    <li>
+                        <h3>Використання class</h3>
+                        <p class="text">
+                            Приклад: p class="text"{}
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Використання id</h3>
+                        <p id="text">
+                            Приклад: p id="text"{}
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Використання data target</h3>
+                        <p data-target="id">
+                            Приклад: p data-target="id"{}
+                        </p>
+                    </li>
+
+                </ol>
+            </div>
+        </section>
+        <section>
+            <h1>Використання комбінацій селекторів</h1>
+            <div>
+                <ol>
+                    <li>
+                        <h3>Комбінація tag.class#id</h3>
+                        <p>
+                            Приклад: p.class#id{} - описує тег p, якому присвоєно комбінацію певного class та id
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Комбінація tag[type]</h3>
+                        <p>
+                            Приклад: button[type="submit"]{} - описує зазначений тег, що містить в собі певний атрибут
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Задання стилів одночасно для декількох селекторів</h3>
+                        <p>
+                            Приклад: p.text, p#text{} - одночасно описує теги p class="text" та p id="text"
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Вкладені теги</h3>
+                        <p>
+                            Приклад: div span {} - описує span, який огорнутий в div
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Вкладені теги 1 рівня</h3>
+                        <p>
+                            Приклад: div > span {} - описує тег, що знаходиться на 1 рівні вкладеності
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 

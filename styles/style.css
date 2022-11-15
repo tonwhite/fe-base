@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+main {
+  margin: 40px 40px 40px 40px;
+  
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+
+}
+
+li {
+    margin-bottom: 30px;
+
+}
+
+p {
+    color: blue;
+}
+
+.text {
+    color:yellow;
+    width: 300px;
+}
+
+#text {
+    color:green;
+    width: 500px;
+}
+
+[data-target="id"] {
+    color: aqua;
+}
+
+p.text {
+    color: cyan;
+}
