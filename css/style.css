@@ -1,14 +1,103 @@
 * {
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  background: #c4c4c4;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container {
+  background: #e6e6e6;
+  margin: 0px 50px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.wrapper {
+  margin: 50px 0px;
+  width: 100%;
+}
+
+.figure1,
+.figure2,
+.figure3,
+.figure4 {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background: #fc8f8f;
+}
+
+.num1,
+.num2,
+.num3,
+.num4 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 200px;
+  text-align: center;
+  color: #ffffff;
+  padding-left: 41%;
+}
+
+.figure1,
+.figure-row3-1 {
+  float: left;
+}
+
+.figure2,
+.small-figure22-row,
+.figure-row3-2 {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.small-figure22,
+.small-figure25 {
+  width: 100px;
+  height: 100px;
+  background: #fc8f8f;
+  float: left;
+  text-align: center;
+}
+
+.small-figure22 {
+  margin-right: 15px;
+}
+
+.figure1 {
+    margin-right: 15px;
+}
+
+.num22 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100px;
+  text-align: center;
+  color: #ffffff;
 }
