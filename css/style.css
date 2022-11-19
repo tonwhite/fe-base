@@ -32,19 +32,22 @@ body {
 
 @keyframes colorRotate {
   from {
-    color: #6666ff;
+    color: #0000ff;
   }
-  10% {
-    color: #0099ff;
+  20% {
+    color: #ffd900;
   }
-  50% {
-    color: #00ff00;
+  40% {
+    color: #0066ff;
   }
-  75% {
-    color: #ff3399;
+  60% {
+    color: #ffe600;
+  }
+  80% {
+    color: #00b7ff;
   }
   100% {
-    color: #6666ff;
+    color: #ffee00;
   }
 }
 
