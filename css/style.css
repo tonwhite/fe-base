@@ -63,14 +63,15 @@ body {
   width: 100%;
 }
 
-.figure1,
-.figure2,
-.figure3,
-.figure4 {
+.square1,
+.square2,
+.square3,
+.square4 {
   display: block;
   width: 200px;
   height: 200px;
   background: #fc8f8f;
+  text-align: center;
 }
 
 .num1,
@@ -82,26 +83,12 @@ body {
   line-height: 200px;
   text-align: center;
   color: #ffffff;
-  padding-left: 41%;
 }
 
-.figure1,
-.figure-row3-1 {
-  float: left;
-}
-
-.figure2,
-.small-figure22-row,
-.figure-row3-2 {
-  float: right;
-}
-
-.clearfix {
-  clear: both;
-}
-
-.small-figure22,
-.small-figure25 {
+.small.square2,
+.small.square3,
+.small.square4,
+.small.square5 {
   width: 100px;
   height: 100px;
   background: #fc8f8f;
@@ -109,15 +96,38 @@ body {
   text-align: center;
 }
 
-.small-figure22,
-.figure1 {
-  margin-right: 15px;
-}
-
-.num22 {
+.small.num2,
+.small.num3,
+.small.num4,
+.small.num5 {
   font-weight: 700;
   font-size: 36px;
   line-height: 100px;
   text-align: center;
   color: #ffffff;
 }
+
+.square1,
+.square-row3-1 {
+  float: left;
+}
+
+.square2,
+.small.square22-row,
+.square-row3-2 {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.small.square2,
+.small.square3,
+.small.square4,
+.square1 {
+  margin-right: 15px;
+  text-align: center;
+}
+
+
