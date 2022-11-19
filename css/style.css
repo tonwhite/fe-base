@@ -23,9 +23,29 @@ body {
   background: #c4c4c4;
 }
 
-h1 {
-  font-size: 2rem;
+.rainbow {
+  font-family: sans-serif;
   text-align: center;
+  font-size: 2rem;
+  animation: colorRotate 6s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
 }
 
 .container {
@@ -86,12 +106,9 @@ h1 {
   text-align: center;
 }
 
-.small-figure22 {
-  margin-right: 15px;
-}
-
+.small-figure22,
 .figure1 {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 .num22 {
