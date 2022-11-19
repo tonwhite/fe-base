@@ -25,6 +25,7 @@ body {
 
 .rainbow {
   font-family: sans-serif;
+  margin-top: 15px;
   text-align: center;
   font-size: 2rem;
   animation: colorRotate 6s linear 0s infinite;
@@ -81,7 +82,6 @@ body {
   font-weight: 700;
   font-size: 64px;
   line-height: 200px;
-  text-align: center;
   color: #ffffff;
 }
 
@@ -103,18 +103,19 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 100px;
-  text-align: center;
   color: #ffffff;
 }
 
 .square1,
-.square-row3-1 {
+.square3,
+.square.row3-1 {
   float: left;
 }
 
 .square2,
-.small.square22-row,
-.square-row3-2 {
+.square4,
+.small.square.row2-1,
+.square.row3-2 {
   float: right;
 }
 
@@ -125,9 +126,9 @@ body {
 .small.square2,
 .small.square3,
 .small.square4,
-.square1 {
+.square1.row3-1,
+.square3.row3-2 {
   margin-right: 15px;
-  text-align: center;
 }
 
 
