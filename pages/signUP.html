@@ -5,20 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Registration</title>
 </head>
 
 <body>
     <header>
         <div>
-            <a href="../index.html">Home</a>
-            <a href="./signIN.html">Sign In</a>
-            <a href="./search.html">Sign Up</a>
+            <a href="../index.html">Homepage</a>
+            <a href="./signIN.html">Sign in</a>
+            <a href="./search.html">Search</a>
         </div>
     </header>
     <main>
+        <section>
+            <h1>Sign Up</h1>
+            <form action="https://fom.in.ua/echo" method="post">
+                <fieldset>
+                    <p>
+                        <label>
+                            <input id="email" type="email" name="email" class="field" placeholder="Enter your email"
+                                required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input id="password" type="password" name="password" class="field"
+                                placeholder="Enter your password" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="password" name="password" class="field"
+                                placeholder="Confirm your password" required>
+                        </label>
+                    </p>
+                </fieldset>
+                <p>
+                    <button type="submit">Register</button>
+                </p>
 
+            </form>
+        </section>
     </main>
     <footer></footer>
 </body>

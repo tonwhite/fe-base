@@ -5,20 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Search</title>
 </head>
 
 <body>
     <header>
         <div>
-            <a href="../index.html">Home</a>
-            <a href="./signUP.html">Sign Up</a>
-            <a href="./signIN.html">Sign In</a>
+            <a href="../index.html">Homepage</a>
         </div>
     </header>
     <main>
+        <section>
+            <h1>Search</h1>
+            <form action="https://fom.in.ua/echo" method="post">
+                <fieldset>
+                    <legend>
+                        Specify car categories
+                    </legend>
+                    <p>
+                        <label>
+                            Buggy <input type="checkbox" name="Buggy" value="Buggy" id="Buggy">
+                        </label>
+                        <label>
+                            Convertible <input type="checkbox" name="Convertible" value="Convertible" id="Convertible">
+                        </label>
+                        <label>
+                            Hatchback <input type="checkbox" name="Hatchback" value="Hatchback" id="Hatchback">
+                        </label>
+                        <label>
+                            Limousine <input type="checkbox" name="Limousine" value="Limousine" id="Limousine">
+                        </label>
+                        <label>
+                            Microvan <input type="checkbox" name="Microvan" value="Microvan" id="Microvan">
+                        </label>
+                        <label>
+                            Minivan <input type="checkbox" name="Minivan" value="Minivan" id="Minivan">
+                        </label>
+                        <label>
+                            Sedan <input type="checkbox" name="Sedan" value="Sedan" id="Sedan">
+                        </label>
+                    </p>
+                    <p>
+                        <select name="brand" id="brand">
+                            <option value="none" disabled selected>Choose option</option>
+                            <option value="Porsche">Porsche</option>
+                            <option value="Tesla">Tesla</option>
+                            <option value="Kia">Kia</option>
+                            <option value="Peugeot">Peugeot</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Jaguar">Jaguar</option>
+                            <option value="Mazda">Mazda</option>
+                            <option value="Volvo">Volvo</option>
+                            <option value="MINI">MINI</option>
+                            <option value="Toyota">Toyota</option>
+                        </select>
+                    </p>
+                    <p>
+                        Production country
+                        <br>
+                        <select name="country origin">
+                            <option value="none" disabled selected> Choose option</option>
+                            <option value="China">China</option>
+                            <option value="United States">United States</option>
+                            <option value="Japan">Japan</option>
+                            <option value="India">India</option>
+                            <option value="South Korea">South Korea</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </p>
+                    <p>
+                        Price
+                        <br>
+                        <label>
+                            From <input type="number" name="price" placeholder="bottom value">
+                        </label>
+                        <label>
+                            to <input type="number" name="price" placeholder="top value">
+                        </label>
+                    </p>
 
+
+
+                </fieldset>
+                <p>
+                    <button type="submit">Show</button>
+                </p>
+
+            </form>
+        </section>
     </main>
     <footer></footer>
 </body>
