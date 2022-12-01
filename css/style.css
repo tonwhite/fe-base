@@ -20,17 +20,6 @@ h1 {
 
 .home.bg {
     background-color: rgb(68, 132, 134);
-
-}
-
-.img.bg {
-    min-width: 400px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    opacity: 40%;
-    margin: 0;
-    z-index: -1;
 }
 
 .home.box {
