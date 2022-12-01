@@ -16,14 +16,17 @@
         </div>
     </header>
     <main>
-        <section>
+        <section class="section search">
             <h1>Search</h1>
             <form action="https://fom.in.ua/echo" method="post">
-                <fieldset>
+                <fieldset class="main fieldset">
                     <legend>
                         Specify car categories
                     </legend>
+                    <br>
                     <p>
+                        Car body type:
+                        <br>
                         <label>
                             Buggy <input type="checkbox" name="Buggy" value="Buggy" id="Buggy">
                         </label>
@@ -47,6 +50,7 @@
                         </label>
                     </p>
                     <p>
+                        Car brand:
                         <select name="brand" id="brand">
                             <option value="none" disabled selected>Choose option</option>
                             <option value="Porsche">Porsche</option>
@@ -62,8 +66,7 @@
                         </select>
                     </p>
                     <p>
-                        Production country
-                        <br>
+                        Production country:
                         <select name="country origin">
                             <option value="none" disabled selected> Choose option</option>
                             <option value="China">China</option>
@@ -79,17 +82,108 @@
                     </p>
                     <p>
                         Price
-                        <br>
                         <label>
-                            From <input type="number" name="price" placeholder="bottom value">
+                            from <input type="number" name="bottom-price" placeholder="bottom value" min="0">
                         </label>
                         <label>
-                            to <input type="number" name="price" placeholder="top value">
+                            to <input type="number" name="top-price" placeholder="top value" min="0">
+                        </label>
+                        <label>
+                            <select name="currency">
+                                <option value="dollar">$</option>
+                                <option value="euro">€</option>
+                                <option value="hryvnia">₴</option>
+                            </select>
                         </label>
                     </p>
+                    <p>
+                        Year of issue
+                        <label>
+                            from <input type="month" name="year">
+                        </label>
+                        <label>
+                            to <input type="month" name="year">
+                        </label>
+                    </p>
+                    <p>
+                        Condition:
+                        <br>
+                        <label>
+                            Brand new <input type="radio" name="condition" value="new">
+                        </label>
+                        <label>
+                            Restored <input type="radio" name="condition" value="Crashed">
+                        </label>
+                        <label>
+                            Loan <input type="radio" name="condition" value="loan">
+                        </label><br>
+                        <label>
+                            Registered <input type="radio" name="registration" value="registered">
+                        </label>
+                        <label>
+                            Unregistered <input type="radio" name="registration" value="unregistered">
+                        </label>
+                    </p>
+                    <p>
+                        Fuel type:
+                        <label>
+                            gasoline <input type="radio" name="fuel" value="gasoline">
+                        </label>
+                        <label>
+                            electric <input type="radio" name="fuel" value="electric">
+                        </label>
+                        <label>
+                            diesel <input type="radio" name="fuel" value="diesel">
+                        </label>
+                        <label>
+                            hybrid <input type="radio" name="fuel" value="hybrid">
+                        </label>
+                        <label>
+                            gas <input type="radio" name="fuel" value="gas">
+                        </label>
 
-
-
+                    </p>
+                    <p>
+                        Type of gearbox:
+                        <label>
+                            AMT <input type="radio" name="gearbox" value="AMT">
+                        </label>
+                        <label>
+                            CVT <input type="radio" name="gearbox" value="CVT">
+                        </label>
+                        <label>
+                            DSG <input type="radio" name="gearbox" value="DSG">
+                        </label>
+                    </p>
+                    <p>
+                        Color:
+                        <input type="color" name="color" onchange="console.log(event.target.value)">
+                    </p>
+                    <p>
+                        Comfort:
+                        <br>
+                        <label>
+                            Air conditioning <input type="checkbox" name="conveniences" value="air-conditioner">
+                        </label>
+                        <label>
+                            Heated seats <input type="checkbox" name="conveniences" value="seatheating">
+                        </label>
+                        <label>
+                            Alarms <input type="checkbox" name="conveniences" value="alarm">
+                        </label>
+                        <label>
+                            Multimedia <input type="checkbox" name="conveniences" value="multimedia">
+                        </label>
+                        <label>
+                            Turbo timer <input type="checkbox" name="conveniences" value="turbotimer">
+                        </label>
+                        <label>
+                            Multiruler <input type="checkbox" name="conveniences" value="multiwheel">
+                        </label>
+                        <label>
+                            Leather salon <input type="checkbox" name="conveniences" value="leather-car">
+                        </label>
+                    </p>
                 </fieldset>
                 <p>
                     <button type="submit">Show</button>

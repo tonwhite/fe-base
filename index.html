@@ -9,7 +9,8 @@
     <title>Продаж автомобілів</title>
 </head>
 
-<body>
+<body class="home bg">
+
     <header>
         <div hidden>
             <a href="./pages/signUP.html">Sign up</a>
@@ -17,35 +18,42 @@
             <a href="./pages/search.html">Search</a>
         </div>
     </header>
+
     <main>
-        <section>
+        <img class="img bg" src="https://free4kwallpapers.com/uploads/originals/2019/03/26/cyberpunk-car-wallpaper.jpg"
+            alt="cyberpunk">
+        <section class="home box">
             <h1 class="home title">Auto Bazaar</h1>
-            <p class="home description">Top 1 car shop in your village</p>
+            <p class="home description">Best car shop in your village</p>
             <br>
-            <div>
+            <nav class="home navigation">
                 <a href="./pages/signUP.html">Sign up</a>
-                <a href="./pages/singIN.html">Sign in</a>
+                <a href="./pages/signIN.html">Sign in</a>
                 <a href="./pages/search.html">Search</a>
-            </div>
+            </nav>
             <form action="https://fom.in.ua/echo" method="post" hidden>
                 <p>
                     <label>
-                        <input id="login" type="text" name="login" class="field" placeholder="Enter your login" required>
+                        <input id="login" type="text" name="login" class="field" placeholder="Enter your login"
+                            required>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input id="password" type="password" name="password" class="field" placeholder="Enter your password" required>
+                        <input id="password" type="password" name="password" class="field"
+                            placeholder="Enter your password" required>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input id="email" type="email" name="email" class="field" placeholder="Enter your email" required>
+                        <input id="email" type="email" name="email" class="field" placeholder="Enter your email"
+                            required>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input id="tel" type="tel" name="tel" class="field" placeholder="Enter your phone number" required>
+                        <input id="tel" type="tel" name="tel" class="field" placeholder="Enter your phone number"
+                            required>
                     </label>
                 </p>
                 <p>
@@ -57,7 +65,7 @@
                 <p>
                     <button type="submit">Send</button>
                 </p>
-                
+
             </form>
         </section>
     </main>
