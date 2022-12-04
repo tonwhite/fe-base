@@ -22,28 +22,20 @@ h3 {
     text-align: center;
     font-size: 1rem;
     margin-top: 50px;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
 }
 
 th, td {
     padding: 0.25rem;
 }
 
-.section {
+table {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.container {
+.table, .month {
     border: 1px solid;
-    max-width: fit-content;
-    margin: 0px auto;
-}
-
-.calendar {
-    display: inline-block;
-    text-align: center;
-    border: 1px solid;
-    margin: 1px 1px -3px 1px;
-    padding: 4px;
 }
 
