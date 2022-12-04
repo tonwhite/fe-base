@@ -1,12 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    line-height: 1.5;
+    line-height: 1;
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    font-size: 28px;
+}
+
 a {
-    color: inherit;
+    color: green;
     text-decoration: none;
 }
 
@@ -14,18 +18,35 @@ img {
     max-width: 100%;
 }
 
+h3 {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 50px;
+    margin-bottom: 2px;
+}
+
 th, td {
     padding: 0.25rem;
     
 }
 
-table {
+.section {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid;
 }
 
-.table {
+.container {
     border: 1px solid;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
+
+.calendar {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid;
+    margin: 1px;
+    padding: 4px;
+}
+
