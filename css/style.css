@@ -8,6 +8,41 @@
   --color-white: #ffffff;
 }
 
+/*-----------------------------------TEXT--BLOCK----------------------------------*/
+.container {
+  width: 100%;
+  max-width: 540px;
+}
+
+.white {
+  color: var(--color-white);
+}
+
+.about.title,
+.how.title {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 38px;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.title {
+  text-align: center;
+}
+
+.about.text,
+.how.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.text {
+  color: var(--color-dark-grey);
+  text-align: center;
+}
+
 /*-------------------------------------HEADER------------------------------------*/
 .header {
   background-color: var(--color-grey);
@@ -55,15 +90,13 @@
   margin-bottom: 65px;
 }
 
-.button.contact {
+.main.button {
   text-align: center;
   background-color: var(--color-darkblue);
   color: var(--color-white);
-  min-width: 255px;
+  max-width: 255px;
   padding: 20px 40px;
 }
-
-
 
 .button {
   letter-spacing: 0.1em;
@@ -74,7 +107,6 @@
 .about-section {
   background-color: var(--color-lightgrey);
   padding-top: 112px;
-  
 }
 
 .about-section > .container {
@@ -87,7 +119,8 @@
 }
 
 /*------------------------------------PORTFOLIO--ABOUT----------------------------*/
-.about-portfolio {
+.about-portfolio,
+.footer {
   background-color: var(--color-darkblue);
 }
 
@@ -97,19 +130,16 @@
   max-width: 100%;
   padding-top: 100px;
   padding-bottom: 100px;
-  
 }
 
 .wrapper {
   display: inline-block;
-  color: #ffffff;
   text-align: left;
   margin-left: 45px;
 }
 
 .portfolio-bar {
   display: inline-block;
-  color: #ffffff;
   text-align: left;
 }
 
@@ -121,7 +151,7 @@
 
 .portfolio-bar > p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 26px;
 }
 
@@ -146,30 +176,38 @@
   padding-bottom: 100px;
 }
 
+.how-section > .container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 57px;
+  text-align: center;
+}
 
-
-/*-----------------------------------TEXT--BLOCK----------------------------------*/
-.container {
+.video {
+  display: block;
+  max-width: 1110px;
   width: 100%;
-  max-width: 540px;
+  aspect-ratio: 16/9;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.about.title,
-.how.title {
-  font-size: 2rem;
+/*-----------------------------------FOOTER-----------------------------------*/
+
+.footer > .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 400px;
+}
+
+.footer-title {
   font-weight: 500;
-  line-height: 38px;
-  color: #000000;
-  margin-bottom: 50px;
+  font-size: 21px;
+  line-height: 25px;
 }
 
-.about.text,
-.how.text {
+.footer-text {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-}
-
-.text {
-  color: var(--color-dark-grey);
+  font-size: 13px;
+  line-height: 21px;
 }
