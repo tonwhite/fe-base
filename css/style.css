@@ -21,7 +21,7 @@ img {
 }
 
 body {
-  background: #F9F9F9;
+  background: #f9f9f9;
   color: #000000;
   max-width: 100%;
   width: 100%;
@@ -36,6 +36,8 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  font-weight: 500;
+  line-height: 38px;
 }
 
 p {
@@ -45,7 +47,7 @@ p {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 540px;
   width: 100%;
 }
 
@@ -82,9 +84,7 @@ p {
   text-align: center;
 }
 
-.t
-
-.menu-item {
+.t .menu-item {
 }
 
 .button {
