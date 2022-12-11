@@ -16,7 +16,7 @@ html {
   font-weight: 400;
   line-height: 1.64; /* 26.25px */
   color: #000000;
-  background: #eeeff1;  
+  background: #eeeff1;
 }
 
 img {
@@ -25,17 +25,4 @@ img {
 
 body {
   background: #eeeff1;
-}
-
-h1 {
-  font-size: 3rem;
-  font-weight: 500;
-  line-height: 79px;
-  color: #000000;
-}
-
-p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
 }
