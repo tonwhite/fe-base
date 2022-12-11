@@ -12,16 +12,18 @@
 /*-------------------------------------HEADER------------------------------------*/
 .header {
   background-color: var(--color-grey);
-  
 }
 
 .nav-bar {
   display: inline-block;
   margin-top: 80px;
   margin-right: 400px;
-  margin-bottom: 150px;
   margin-left: 400px;
   line-height: 26px;
+}
+
+.nav-link:hover {
+  color: var(--color-darkblue);
 }
 
 .nav-link + .nav-link {
@@ -32,11 +34,13 @@
 
 .first-section {
   background-color: var(--color-grey);
+  padding-top: 150px;
+  padding-left: 400px;
+  padding-bottom: 140px;
 }
 
 .main-title, .main-text {
   text-align: left;
-  margin-left: 400px;
   width: 100%;
 }
 
@@ -55,7 +59,6 @@
   color: var(--color-white);
   min-width: 255px;
   padding: 20px 40px;
-  margin-left: 400px;
 }
 
 .container {
@@ -63,40 +66,8 @@
   max-width: 540px;
 }
 
-/* .menu {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 42px;
-  list-style-type: none;
-} */
-
-.bg-dark-blue {
-  background: #34547a;
-}
-
-/* .bg-grey {
-  background: #eeeff1;
-} */
-
-.bg-light-grey {
-  background: #f9f9f9;
-}
-
-.tc-white {
-  color: #ffffff;
-}
-
-.tc-grey {
-  color: #727272;
-}
-
-.t-center {
-  text-align: center;
-}
-
 .button {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+
