@@ -1,8 +1,12 @@
 
 :root {
+  /*--------------------background----------------------*/
   --color-darkblue: #34547a;
   --color-grey: #eeeff1;
   --color-lightgrey: #f9f9f9;
+  /*--------------------text----------------------*/
+  --color-dark-grey: #727272;
+  --color-white: #ffffff;
 }
 
 /*-------------------------------------HEADER------------------------------------*/
@@ -33,6 +37,7 @@
 .main-title, .main-text {
   text-align: left;
   margin-left: 400px;
+  width: 100%;
 }
 
 .main-title {
@@ -41,14 +46,17 @@
 
 .main-text {
   margin-bottom: 65px;
+  color: var(--color-dark-grey);
 }
 
-
-
-
-
-
-
+.button.contact {
+  text-align: center;
+  background-color: var(--color-darkblue);
+  color: var(--color-white);
+  min-width: 255px;
+  padding: 20px 40px;
+  margin-left: 400px;
+}
 
 .container {
   width: 100%;
