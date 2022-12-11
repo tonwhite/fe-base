@@ -1,3 +1,4 @@
+@import url(./common.css);
 :root {
   /*--------------------background----------------------*/
   --color-darkblue: #34547a;
@@ -5,17 +6,179 @@
   --color-lightgrey: #f9f9f9;
   /*--------------------text----------------------*/
   --color-dark-grey: #727272;
-  --color-white: #ffffff;
 }
+
+/*-------------------------------------HEADER------------------------------------*/
+.header {
+  background-color: var(--color-grey);
+  padding-top: 80px;
+}
+
+.nav-bar {
+  display: inline-block;
+  line-height: 26px;
+}
+
+.nav-link:hover {
+  color: var(--color-darkblue);
+  font-weight: 500;
+}
+
+.nav-link {
+  margin-right: 42px;
+}
+
+/*-------------------------------------FIRST--SECTION------------------------------------*/
+
+.first-section {
+  background-color: var(--color-grey);
+  padding-top: 150px;
+  padding-bottom: 140px;
+}
+
+.main.title,
+.main.text {
+  text-align: left;
+  width: 100%;
+}
+
+.main.title {
+  margin-bottom: 60px;
+}
+
+.main.text {
+  margin-bottom: 65px;
+}
+
+.main.button {
+  text-align: center;
+  background-color: var(--color-darkblue);
+  color: white;
+  max-width: 255px;
+  padding: 20px 40px;
+}
+
+.button,
+.nav-link {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/*-----------------------------------SECTION--ABOUT----------------------------------*/
+.about-section {
+  background-color: var(--color-lightgrey);
+  padding-top: 112px;
+}
+
+.about-section > .container {
+  max-width: 540px;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+/*------------------------------------PORTFOLIO--ABOUT----------------------------*/
+.about-portfolio,
+.footer {
+  background-color: var(--color-darkblue);
+}
+
+.about-portfolio > .about-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.wrapper {
+  display: inline-block;
+  text-align: left;
+  margin-left: 45px;
+}
+
+.portfolio-bar {
+  display: inline-block;
+  text-align: left;
+  color: white;
+}
+
+.portfolio-bar > h3 {
+  font-weight: 500;
+  font-size: 1.3125rem;
+  line-height: 25px;
+}
+
+.portfolio-bar > p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 26px;
+}
+
+.portfolio {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  background-color: var(--color-darkblue);
+}
+
+.icon {
+  max-width: 50px;
+  margin-right: 20px;
+}
+
+/*-----------------------------------HOW--BLOCK-----------------------------------*/
+.how-section {
+  background-color: var(--color-grey);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.how-text {
+  margin-bottom: 57px;
+}
+
+.video {
+  display: block;
+  max-width: 1110px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*-----------------------------------FOOTER-----------------------------------*/
+
+.last-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-title {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+}
+.footer-title,
+.footer-text {
+  color: white;
+}
+
+
 
 /*-----------------------------------TEXT--BLOCK----------------------------------*/
 .container {
   width: 100%;
-  max-width: 540px;
-}
-
-.white {
-  color: var(--color-white);
+  max-width: calc(1110px + 2rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about.title,
@@ -41,173 +204,4 @@
 .text {
   color: var(--color-dark-grey);
   text-align: center;
-}
-
-/*-------------------------------------HEADER------------------------------------*/
-.header {
-  background-color: var(--color-grey);
-  padding-top: 80px;
-}
-
-.nav-bar {
-  display: inline-block;
-  line-height: 26px;
-  margin-left: 400px;
-}
-
-.nav-link:hover {
-  color: var(--color-darkblue);
-  font-weight: 500;
-}
-
-.nav-link + .nav-link {
-  margin-left: 42px;
-}
-
-/*-------------------------------------FIRST--SECTION------------------------------------*/
-
-.first-section {
-  background-color: var(--color-grey);
-  padding-top: 150px;
-  padding-bottom: 140px;
-}
-
-.first-section > .container {
-  margin-left: 400px;
-}
-
-.main.title,
-.main.text {
-  text-align: left;
-  width: 100%;
-}
-
-.main.title {
-  margin-bottom: 60px;
-}
-
-.main.text {
-  margin-bottom: 65px;
-}
-
-.main.button {
-  text-align: center;
-  background-color: var(--color-darkblue);
-  color: var(--color-white);
-  max-width: 255px;
-  padding: 20px 40px;
-}
-
-.button {
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-/*-----------------------------------SECTION--ABOUT----------------------------------*/
-.about-section {
-  background-color: var(--color-lightgrey);
-  padding-top: 112px;
-}
-
-.about-section > .container {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  max-width: 540px;
-  width: 100%;
-  padding-bottom: 100px;
-}
-
-/*------------------------------------PORTFOLIO--ABOUT----------------------------*/
-.about-portfolio,
-.footer {
-  background-color: var(--color-darkblue);
-}
-
-.about-portfolio > .about-container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.wrapper {
-  display: inline-block;
-  text-align: left;
-  margin-left: 45px;
-}
-
-.portfolio-bar {
-  display: inline-block;
-  text-align: left;
-}
-
-.portfolio-bar > h3 {
-  font-weight: 500;
-  font-size: 1.3125rem;
-  line-height: 25px;
-}
-
-.portfolio-bar > p {
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 26px;
-}
-
-.portfolio {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  text-align: center;
-}
-
-.icon {
-  max-width: 50px;
-  width: 100%;
-  margin-right: 20px;
-}
-
-/*-----------------------------------HOW--BLOCK-----------------------------------*/
-.how-section {
-  background-color: var(--color-grey);
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.how-section > .container {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 57px;
-  text-align: center;
-}
-
-.video {
-  display: block;
-  max-width: 1110px;
-  width: 100%;
-  aspect-ratio: 16/9;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*-----------------------------------FOOTER-----------------------------------*/
-
-.footer > .container {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-left: 400px;
-}
-
-.footer-title {
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 25px;
-}
-
-.footer-text {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 21px;
 }
