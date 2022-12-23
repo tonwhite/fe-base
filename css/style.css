@@ -97,7 +97,7 @@ ul.menu > li.menu-item:hover {
     color: #FFFFFF;
 }
 
-ul.menu:hover {
+ul.menu {
     border-bottom: 5px solid #009EFF;
 }
 
