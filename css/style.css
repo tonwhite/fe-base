@@ -21,13 +21,14 @@ ul.menu {
     list-style: none;
     background-color: #333333;
     text-transform: uppercase;
-}
-
-ul.menu > li.menu-item > a {
     color: #CBCBCB;
 }
 
-ul.menu > li.menu-item > a:hover {
+ul.menu li.menu-item > a {
+    color: #CBCBCB;
+}
+
+ul.menu > li.menu-item:hover > a {
     color: #FFFFFF;
 }
 
