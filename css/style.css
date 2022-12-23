@@ -3,7 +3,6 @@
     padding: 0;
     line-height: 1.5;
     font-family: monospace;
-    box-sizing: border-box;
 }
 
 a {
@@ -21,10 +20,16 @@ img {
 ul.menu {
     list-style: none;
     background-color: #333333;
-    color: #CBCBCB;
     text-transform: uppercase;
 }
 
+ul.menu > li.menu-item > a {
+    color: #CBCBCB;
+}
+
+ul.menu > li.menu-item > a:hover {
+    color: #FFFFFF;
+}
 
 ul li {
     display: inline-block;
@@ -48,19 +53,29 @@ ul li ul.dropdown {
     z-index: 999;
     display: none;
     text-align: center;
+    padding-top: 5px;
 }
 
 ul li ul.dropdown li {
-    border: 2px solid #0084EF;
     width: 300px;
     text-align: justify;
     background-color: #009EFF;
 }
 
+ul li ul.dropdown li {
+    border: 2px solid #0084EF;
+    border-bottom: 0px;
+}
+
+ul li ul.dropdown li:last-child {
+    border-bottom: 2px solid #0084EF;
+}
+
 ul li ul.dropdown li:hover ul.dropdown.lvl2 {
     display: block;
-    top: 0px;
-    left: 297px;
+    padding: 0px 0px 0px 0px;
+    top: -2px;
+    left: 300px;
 }
 
 ul li ul.dropdown li {
@@ -68,7 +83,7 @@ ul li ul.dropdown li {
 }
 
 ul li ul.dropdown li:hover {
-    background-color: #00A9FF;
+    background-color: #00b7ff;
 }
 
 span.right {
@@ -76,12 +91,13 @@ span.right {
 }
 
 
-ul li:hover {
+ul.menu > li.menu-item:hover {
     background-color: #009EFF;
+    color: #FFFFFF;
 }
 
 ul.menu:hover {
-    border-bottom: 4px solid #009EFF;
+    border-bottom: 5px solid #009EFF;
 }
 
 ul li:hover ul.dropdown {
